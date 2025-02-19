@@ -249,6 +249,35 @@ body {
     border-radius: 8px;
 }
 
+.about-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-text h2{
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+}
+
+.btn-about{
+    /* background-color: #419657; */
+    padding:  10px 15px;
+    border: none;
+    border: 0.7px solid #18ab29;
+    border-radius: 14px;
+    cursor: pointer;
+    /* color: var(--white); */
+    box-shadow: 0px 3px 0px #2f6627;
+    font-size: 0.9rem;
+    transition: all 0.4s;
+}
+
+.btn-about:hover{
+    background-color: #04c44b;
+    color: #fff;
+    letter-spacing: 1.2px;
+}
+
 /* Stats Section */
 .stats {
     padding: 4rem 0;

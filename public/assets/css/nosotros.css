@@ -113,7 +113,11 @@ body {
 
 .hero, .mission-vision{
     height: 50vh;
+<<<<<<< HEAD
     /* display: flex; */
+=======
+    display: flex;
+>>>>>>> 6e31eb4 (Modificacion del boton-conocenos mas en home)
     /* align-items: center; */
     /* justify-content: center; */
 }
