@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="../../public/assets/css/servicios.css">
+    <link rel="stylesheet" href="../../public/assets/css/nav.css">
+     <!-- <link rel="stylesheet" href="/public/assets/css/nosotros.css"> -->
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">GEEP</div>
+            <button class="mobile-menu-btn">
+                <span class="hamburger"></span>
+            </button>
+            <div class="nav-links">
+                <a href="../../index.html#home">Home</a>
+                <a href="../../index.html#nosotros">Nosotros</a>
+                <a href="../../index.html#servicios">Servicios y Soluciones</a>
+                <a href="#productos">Productos</a>
+                <button class="contact-btn">Contacto</button>
+            </div>
+        </div> 
+    </nav>
+    <main>
+        <section class="hero">
+            <h1>SERVICIOS</h1>
+        </section>
+
+        <section class="services">
+            <h2>Montaje y pruebas de equipos</h2>
+            
+            <div class="carousel-container container">
+                <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="carousel">
+                    <div class="slide active">
+                        <div class="content">
+                            <div class="image">
+                                <img src="https://placehold.co/600x400/00aa55/ffffff" alt="Celdas de media tensión">
+                            </div>
+                            <div class="description">
+                                <h3>1. Celdas de media tensión:</h3>
+                                <p>Servicio de montaje y pruebas eléctricas de cuadros de media tensión aislados en aire de diversos fabricantes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="content">
+                            <div class="image">
+                                <img src="https://placehold.co/600x400/00aa55/ffffff" alt="Transformadores de distribución">
+                            </div>
+                            <div class="description">
+                                <h3>2. Transformadores de distribución:</h3>
+                                <p>Servicio de montaje y pruebas eléctricas de transformadores de distribución secos y en aceite de diversos fabricantes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="content">
+                            <div class="image">
+                                <img src="https://placehold.co/600x400/00aa55/ffffff" alt="Tableros de baja tensión">
+                            </div>
+                            <div class="description">
+                                <h3>3. Tableros de baja tensión:</h3>
+                                <p>Servicio de montaje y pruebas eléctricas de tableros de baja tensión de diversos fabricantes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="/public/assets/js/main.js"></script>
+</body>
+</html>
