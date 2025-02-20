@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 :root {
     --primary-color: #00B140;
     --text-color: #333;
@@ -134,7 +134,7 @@
 
 .mobile-menu-btn.active .hamburger::after {
     transform: rotate(-45deg);
-=======
+}
 :root {
     --primary-color: #00B140;
     --text-color: #333;
@@ -270,5 +270,4 @@
 
 .mobile-menu-btn.active .hamburger::after {
     transform: rotate(-45deg);
->>>>>>> 6e31eb4 (Modificacion del boton-conocenos mas en home)
 }

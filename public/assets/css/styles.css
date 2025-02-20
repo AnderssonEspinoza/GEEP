@@ -108,7 +108,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-top: 4rem;
 }
@@ -117,6 +117,7 @@ body {
 .services {
     padding: 4rem 0;
     background: #f5f5f5;
+    margin-bottom: 4rem;
 }
 
 .services h2 {
@@ -179,6 +180,22 @@ body {
     opacity: 0.9;
 }
 
+.container-buttonService{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.btn-service{
+    background-color: var(--primary-color);
+    color: #fff;
+    width: 120px;
+    font-weight: 700;
+    /* max-width: 170px; */
+}
+
+.btn-service:hover{
+    opacity: 0.9;
+}
+
 /* Update clients section styles */
 .clients {
     padding: 4rem 0;
@@ -232,9 +249,10 @@ body {
 
 /* About Section */
 .about {
-    padding: 4rem 0;
+    padding: 2rem 0;
     background: var(--primary-color);
     color: var(--white);
+    position: relative;
 }
 
 .about-content {
@@ -244,9 +262,15 @@ body {
     align-items: center;
 }
 
+
+
 .about-image img {
     width: 100%;
     border-radius: 8px;
+    height: 390px;
+    width: 750px;
+    position: absolute;
+    bottom: 0;
 }
 
 .about-text{
@@ -275,6 +299,7 @@ body {
 .btn-about:hover{
     background-color: #04c44b;
     color: #fff;
+    font-weight: 700;
     letter-spacing: 1.2px;
 }
 
