@@ -116,7 +116,7 @@ body {
 .hero-overlay{
     position: absolute;
     inset: 0;
-    background: url('/public/assets/img/home/cabecera-home.jpg') center/cover;
+    background: url('../../../public/assets/img/home/cabecera-home.jpg') center/cover;
     /* filter: blur(8px)  ; */
     /* filter: blur(8px) brightness(0.5) sepia(0.9) hue-rotate(90deg); */
 

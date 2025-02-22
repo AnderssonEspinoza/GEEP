@@ -18,7 +18,7 @@ body {
 }
 
 .hero-service {
-    background-image: url('../../public/assets/img/Cabecera.ingenieria_2940x713.jpg');
+    background-image: url('../../../public/assets/img/Cabecera.ingenieria_2940x713.jpg');
     background-size: cover;
     background-position: center;
     height: 380px;
