@@ -27,7 +27,7 @@ export const HOME = {
     title: 'Soluciones confiables para operaciones críticas',
     description:
       'Diseñamos, implementamos y mantenemos sistemas de potencia de baja, media y alta tensión con foco en continuidad, seguridad y cumplimiento técnico.',
-    image: '/assets/img/Cabecera.ingenieria_2940x713.jpg',
+    image: '/assets/img/home/hero-main.webp',
     primaryCta: { label: 'Ver servicios', href: '/#servicios' },
     secondaryCta: { label: 'Solicitar diagnóstico', href: '/contacto' },
   },
@@ -49,13 +49,13 @@ export const HOME = {
     title: 'Equipo experto, enfoque estratégico',
     description:
       'Somos una empresa peruana orientada a soluciones integrales del sector eléctrico. Trabajamos con estándares técnicos robustos y una cultura de mejora continua.',
-    image: '/assets/img/nosotros/banner-nosotros.png',
+    image: '/assets/img/nosotros/banner-nosotros.webp',
     cta: { label: 'Conócenos más', to: '/nosotros' },
   },
 };
 
 export const STATS = [
-  { value: 'Desde 2017', label: 'Trayectoria en el sector' },
+  { value: '+8', label: 'Años' },
   { value: '120+', label: 'Proyectos ejecutados' },
   { value: '24/7', label: 'Soporte especializado' },
   { value: '98%', label: 'Cumplimiento de cronograma' },
@@ -80,22 +80,22 @@ export const SERVICES = {
     {
       title: 'Configuración, ajustes y pruebas de IEDs',
       description: 'Lógicas de interbloqueo, activación de funciones y protocolos de pruebas funcionales.',
-      image: '/assets/img/servicios/thermal-logistics.png',
+      image: '/assets/img/servicios/thermal-logistics.webp',
     },
     {
       title: 'Instalación y comisionamiento',
       description: 'Montaje e integración de equipos de potencia y control con validación en campo.',
-      image: '/assets/img/servicios/Kyoritsu-2017-Digital-Clamp-Meter-from-Tools-Bangladesh-1569385797.png',
+      image: '/assets/img/servicios/kyoritsu.webp',
     },
     {
       title: 'Upgrade y control de riesgos',
       description: 'Mejora de bases instaladas e interbloqueos para mitigar riesgos de operación.',
-      image: '/assets/img/servicios/celda-.png',
+      image: '/assets/img/servicios/celda.webp',
     },
     {
       title: 'Mantenimientos especializados',
       description: 'Diagnóstico, conservación preventiva/correctiva y pruebas de desempeño.',
-      image: '/assets/img/servicios/celda-webp.jpg',
+      image: '/assets/img/servicios/celda-detail.webp',
     },
   ],
   detailSlides: [
@@ -103,13 +103,13 @@ export const SERVICES = {
       title: 'Celdas de media tensión',
       description:
         'Montaje y pruebas eléctricas en cuadros de media tensión aislados en aire para distintos fabricantes.',
-      image: '/assets/img/servicios/celda-webp.jpg',
+      image: '/assets/img/servicios/celda-detail.webp',
     },
     {
       title: 'Transformadores de distribución',
       description:
         'Montaje y pruebas para transformadores secos y en aceite con protocolos de calidad y seguridad.',
-      image: '/assets/img/servicios/Kyoritsu-2017-Digital-Clamp-Meter-from-Tools-Bangladesh-1569385797.png',
+      image: '/assets/img/servicios/kyoritsu.webp',
     },
     {
       title: 'Tableros de baja tensión',
@@ -121,7 +121,7 @@ export const SERVICES = {
       title: 'Pruebas e inspecciones termográficas',
       description:
         'Detección temprana de fallas, análisis de condición y reportes para mantenimiento predictivo.',
-      image: '/assets/img/servicios/thermal-logistics.png',
+      image: '/assets/img/servicios/thermal-logistics.webp',
     },
   ],
 };
@@ -132,7 +132,7 @@ export const ABOUT = {
     title: 'Ingeniería eléctrica confiable para infraestructura crítica',
     description:
       'Desarrollamos soluciones en baja, media y alta tensión para minería, industria, energía y edificaciones con enfoque en continuidad operativa y seguridad.',
-    image: '/assets/img/headers/cabecera-nosotros.jpg',
+    image: '/assets/img/headers/cabecera-nosotros.webp',
     badges: ['Calidad operativa', 'Seguridad eléctrica', 'Innovación técnica'],
   },
   mission: {

@@ -253,16 +253,20 @@ function ContactFormSection() {
     const message = formData.get('message')?.toString().trim() ?? '';
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch(`https://formsubmit.co/ajax/${COMPANY.formRecipientEmail}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          Accept: 'application/json',
         },
         body: JSON.stringify({
-          name,
-          email,
-          phone,
-          message,
+          _subject: `Nueva consulta web - ${name || COMPANY.brand}`,
+          _captcha: 'false',
+          _template: 'table',
+          nombre: name,
+          correo: email,
+          telefono: phone,
+          mensaje: message,
         }),
       });
 
@@ -423,7 +427,14 @@ function HomePage() {
     <main className="pt-28">
       <section id="home" className="relative min-h-[80vh] flex items-center scroll-mt-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={HOME.hero.image} alt="Cabecera GEEP" className="w-full h-full object-cover" />
+          <img
+            src={HOME.hero.image}
+            alt="Cabecera GEEP"
+            className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+          />
           <div className="absolute inset-0 bg-ink-900/65" />
           <div className="absolute inset-0 bg-mesh" />
         </div>
@@ -476,8 +487,13 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="rounded-2xl overflow-hidden shadow-glow animate-float">
-            <img src={HOME.aboutSnippet.image} alt="Equipo GEEP" className="w-full h-full object-cover" loading="lazy" />
+          <div className="rounded-2xl overflow-hidden shadow-glow animate-float bg-gradient-to-br from-geep-500/20 via-white/10 to-transparent">
+            <img
+              src={HOME.aboutSnippet.image}
+              alt="Equipo GEEP"
+              className="w-full h-[280px] md:h-full object-contain md:object-cover image-fade-edge"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
@@ -497,7 +513,7 @@ function ServicesPage() {
   return (
     <main className="pt-28">
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center text-white">
-        <img src="/assets/img/headers/cabecera-servicios.jpg" alt="Servicios GEEP" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="/assets/img/headers/cabecera-servicios.webp" alt="Servicios GEEP" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-ink-900/60" />
         <div className="absolute inset-0 bg-circuit-dark opacity-40" />
         <h1 className="relative z-10 font-display text-4xl md:text-5xl uppercase tracking-[0.3em]">Servicios</h1>
@@ -693,7 +709,14 @@ function AboutPage() {
               </div>
 
               <div className="md:w-1/2 flex justify-center">
-                <img src={item.image} alt={item.title} className="rounded-3xl shadow-xl w-full max-w-sm h-56 object-cover border-4 border-white" loading="lazy" />
+                <div className="rounded-3xl shadow-xl w-full max-w-sm h-56 border-4 border-white bg-gradient-to-br from-geep-100 to-white overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-contain image-fade-edge"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
           );

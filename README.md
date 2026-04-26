@@ -1,35 +1,24 @@
 # GEEP Web
 
-Sitio corporativo en React + Vite con formulario de contacto enviado por función serverless en Vercel.
+Sitio corporativo en React + Vite.
 
-## Formulario de contacto (envío real)
+## Formulario de contacto
 
-La web envía el formulario a `POST /api/contact`.
-La función usa Resend para enviar el email.
+La web envía el formulario directamente con FormSubmit a:
 
-### Variables de entorno en Vercel
+- `Josue.leon@geep-pe.com`
 
-Configura estas variables en tu proyecto Vercel:
+No requiere configurar Resend ni variables de entorno en Vercel.
 
-- `RESEND_API_KEY` (obligatoria)
-- `CONTACT_TO` (opcional, por defecto: `Josue.leon@geep-pe.com`)
-- `CONTACT_FROM` (opcional, por defecto: `GEEP Web <onboarding@resend.dev>`)
+Nota:
 
-Recomendado para producción:
-
-- Verifica tu dominio en Resend.
-- Usa `CONTACT_FROM` con ese dominio, por ejemplo:
-  - `GEEP Web <noreply@geep-pe.com>`
+- La primera vez, FormSubmit puede enviar un correo de activación al destinatario.
+- Después de activar, los envíos llegan normalmente.
 
 ## Desarrollo local
 
-`npm run dev` solo levanta Vite (frontend).
-La ruta `/api/contact` se ejecuta en Vercel.
-
-Para probar frontend + API localmente, usa:
-
 ```bash
-vercel dev
+npm run dev
 ```
 
 ## Build
