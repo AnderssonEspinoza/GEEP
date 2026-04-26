@@ -491,7 +491,7 @@ function HomePage() {
             <img
               src={HOME.aboutSnippet.image}
               alt="Equipo GEEP"
-              className="w-full h-[280px] md:h-full object-contain md:object-cover image-fade-edge"
+              className="w-full h-[280px] md:h-full object-contain md:object-cover image-fade-edge-desktop"
               loading="lazy"
             />
           </div>
