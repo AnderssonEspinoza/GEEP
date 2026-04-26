@@ -487,11 +487,11 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="rounded-2xl overflow-hidden shadow-glow animate-float bg-gradient-to-br from-geep-500/20 via-white/10 to-transparent">
+          <div className="rounded-2xl overflow-hidden shadow-glow bg-white/5">
             <img
               src={HOME.aboutSnippet.image}
               alt="Equipo GEEP"
-              className="w-full h-[280px] md:h-full object-contain md:object-cover image-fade-edge-desktop"
+              className="w-full h-[280px] md:h-full object-contain md:object-cover image-fade-edge"
               loading="lazy"
             />
           </div>
